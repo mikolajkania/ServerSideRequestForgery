@@ -23,7 +23,7 @@ app.use(logger('combined', {
         flags: 'a'
     }),
     skip: function (req, res) {
-        return req.originalUrl != "/dummy/test" || res.statusCode != 404;
+        return req.originalUrl != "/hack/was/made" || res.statusCode != 404;
     }
 }));
 app.use(bodyParser.json());

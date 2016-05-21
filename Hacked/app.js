@@ -63,7 +63,7 @@ app.use(function (err, req, res, next) {
 app.use(function (req, res, next) {
 
     // Website you wish to allow to connect
-    res.setHeader('Access-Control-Allow-Origin', 'http://127.0.0.2:2000');
+    res.setHeader('Access-Control-Allow-Origin', 'http://127.0.0.1:2000');
 
     // Request methods you wish to allow
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
@@ -104,7 +104,7 @@ app.get('/getImage', function (req, res) {
 
     download(url, 'public/images/' + author + '.jpg', function () {
         console.log('done');
-        res.send('http://127.0.0.2:2000/images/' + author +'.jpg');
+        res.send('http://127.0.0.1:2000/images/' + author +'.jpg');
     });
 
 });
