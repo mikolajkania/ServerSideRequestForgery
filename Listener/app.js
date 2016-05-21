@@ -26,6 +26,11 @@ app.use(logger('combined', {
         return req.originalUrl != "/hack/was/made" || res.statusCode != 404;
     }
 }));
+app.use(logger('combined', {
+    stream: fs.createWriteStream('./connections-all.log', {
+        flags: 'a'
+    }),
+}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());

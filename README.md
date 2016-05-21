@@ -20,6 +20,6 @@ A simple website with quot from my favourite philosopher*. Few assumptions were 
 - start with set DEBUG=Listener & npm start
 - available at: http://localhost:3000/
 
-More information on blog post on http://itblues.pl
+More information on blog post: http://itblues.pl/2016/05/21/how-to-perform-server-side-request-forgery/
 
 *not! :-)
